@@ -9,6 +9,7 @@
     <meta name="author" content="shivam agarwal">
     <link rel="stylesheet" href="/assets/css/Landingpage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Font Awesome -->
@@ -26,7 +27,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
 rel="stylesheet"
 />
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rajdhani&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kdam+Thmor+Pro&family=Rajdhani&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4179685835703279"
@@ -46,13 +47,13 @@ rel="stylesheet"
 <body>
     <!-- Nav Bar Opened-->
     <div class="nav-bar">
-        <ul class="nav-list" >
-            <li><img class="floating logo" onclick="windoww()" style="border: none;" src="assets/images/flyravel-2.svg"/></li>
+        <ul class="nav-list" id="navbar">
+          <img class="floating logo" onclick="windoww()" style="border: none;" src="assets/images/flyravel-2.svg"/>
             <li class="li-btn" onmouseover="sound()">Home</li>
-            <li class="li-btn" onmouseover="sound()">Hotel Search</li>
-            <li class="li-btn" onmouseover="sound()">Flight Search</li>
-            <li class="li-btn" onmouseover="sound()">Train Search</li>
-            <li class="li-btn" onmouseover="sound()">Today's Deal</li>
+            <li class="li-btn" onmouseover="sound()"><a href="#hotel">Hotel Search</a></li>
+            <li class="li-btn" onmouseover="sound()"><a href="#flight">Flight Search</a></li>
+            <li class="li-btn" onmouseover="sound()"><a href="#Tours">Tours Search</a></li>
+            <li class="li-btn" onmouseover="sound()"><a href="#About">About</a></li>
         </ul>
     </div>
     <!--Nav bar closed-->
@@ -119,9 +120,9 @@ rel="stylesheet"
       </div>
         <!-- Hero Section closed-->
       <!--Hotel Search-->
-      <div class="Hotel-Search search-bar">
+      <div class="Hotel-Search search-bar" id="hotel">
         <div class="container">
-          <p class="h1 mb-4 mb-md-5 text-dark text-uppercase text-center">Search hotels</p>
+          <p class="h1 mb-4 mb-md-5 text-dark text-uppercase text-center" style="font-family: 'Kdam Thmor Pro', sans-serif;">Search hotels</p>
           <div class="card" style="background-color: rgba(0,0,0,.7);">
             <div class="card-body p-4">
               <div class="row justify-content-center">
@@ -157,7 +158,20 @@ rel="stylesheet"
         </div>
               </div>
               <!-- hotel clo-->
-
+<div id="About"  style="font-family: 'Kdam Thmor Pro', sans-serif;"><h1 class="text-center text-5xl" >Meet The Developer</h1><div class="about max-w-sm rounded overflow-hidden shadow-lg" onmouseover="sound()">
+  <img class="w-full" src="https://drive.google.com/uc?export=view&id=1YIEnk2O7T6oQAcavb7pxzaH9Ppl120To" alt="shivam agarwal">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Shivam Agarwal - Lead Developer</div>
+    <p class="text-gray-700 text-base">
+    Founder of Tech-Startup flyravel Technology <br>
+    Undergrad Batch 2025 From Kalinga Institute of Industrial Technology , India <br>I love to write Code and Solve Problems and I am Frontend-Web-Developer , Competitive Coder and a Freelancer.
+   <br> <a href="https://www.linkedin.com/in/shivamagarwalkiit/"><i class="fi fi-brands-linkedin"></i></a><a style="margin: 10px;" href="https://github.com/StillAbeginnerr"><i class="fi fi-brands-github"></i></a></p>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Web_Dev</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Coding</span>
+  </div>
+</div></div>
               
       <div class="footer-2 bg-gray-800 pt-6 md:pt-12">
         <div class="container px-4 mx-auto">

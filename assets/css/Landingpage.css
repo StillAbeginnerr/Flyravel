@@ -1,22 +1,22 @@
 .nav-list{
    list-style: none;
    display: flex;
-   
+   font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .banner{
     height: 100px;
     width: 6600px;
 }
 .li-btn{
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 2.5rem;
     cursor: pointer;
     margin-top: 4rem;
     transition: transform .2s;
     border: 1px solid black;
     border-radius: 15px;
-    height: 45px;
-    width: 200px;
+    height: 30px;
+    width: 170px;
     text-align: center;
     font-weight: 200;
 }
@@ -61,7 +61,7 @@ position: relative;
 left: 48rem;
 bottom: 30rem;
 width: 803px;
-transition: transform .2s;
+transition: transform 1.6s;
 height: 555px;
 }
 #hero-img:hover{
@@ -75,6 +75,19 @@ html{
     opacity:0;
   
   }
+
+  .about{
+      margin: 15vh 15vh;
+      position: relative;
+      left: 30%;
+      transition: transform 1.5s;
+  }
+.about:hover{
+    transform: scale(1.1);
+    background-color: rgb(12, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
   .appear {
     opacity:1;
   
@@ -99,7 +112,7 @@ html{
   }
 li{
     
-    transition: transform .2s;
+    transition: transform 1.0s;
 }
 li:hover{
     background-color: rgb(12, 0, 0);
