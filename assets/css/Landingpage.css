@@ -9,14 +9,14 @@
 }
 .li-btn{
     font-size: 30px;
-    margin-left: 5rem;
+    margin-left: 2.5rem;
     cursor: pointer;
     margin-top: 4rem;
     transition: transform .2s;
     border: 1px solid black;
     border-radius: 20px;
     height: 45px;
-    width: 280px;
+    width: 200px;
     text-align: center;
     font-weight: 600;
 }
