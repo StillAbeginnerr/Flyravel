@@ -20,12 +20,10 @@
     text-align: center;
     font-weight: 600;
 }
-.li-btn:hover{
 
-}
 
 body{
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Rajdhani', sans-serif;
     overflow-x: hidden;
 }
 .logo{
@@ -71,6 +69,7 @@ height: 555px;
 html{
     scroll-behavior: smooth;             /* -- added smooth scrolling behaviour -- */ 
   }
+  
 .disappear {
     opacity:0;
   
@@ -103,3 +102,4 @@ li{
 li:hover{
     transform: scale(1.11);
 }
+
