@@ -11,6 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+rel="stylesheet"
+/>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rajdhani&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -43,12 +58,12 @@
     <!--Nav bar closed-->
 
     <!--Hero Section Opened-->
-    <div class="hero-section">
+    <div class="hero-section" style="margin-top:35vh;">
        <h2 id="heading-1"> Its Time For New<br>
         Adventures,Escapes thrills &<br>
         experiences
        </h2>
-       <img id="hero-img" src="assets/images/hero-1.jpg" />
+       <img id="hero-img" onmouseover="sound()" src="assets/images/hero-1.jpg" />
     </div>
     <div id="navtbut" class="disappear">
         <a href = "#top">
@@ -58,12 +73,12 @@
       <div class="cards">
           <ul class="cards-1" style="list-style: none;">
             <li class="mr"></li>
-              <li><div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <li><div class="max-w-sm rounded overflow-hidden shadow-lg" onmouseover="sound()">
                 <img class="w-full" src="https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-with-chair-blue-sky_74190-7488.jpg?size=626&ext=jpg&ga=GA1.2.592883807.1653987848" alt="freepik">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">The Beaches</div>
                   <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    “Beach Rules: Soak up the sun. Ride the waves. Breathe the salty air. Feel the breeze. Build sandcastles. Rest, relax, reflect. Collect seashells. Bare-feet required.”
                   </p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
@@ -72,12 +87,12 @@
                 </div>
               </div></li>
               <li class="mr"></li>
-              <li><div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <li><div class="max-w-sm rounded overflow-hidden shadow-lg" onmouseover="sound()">
                 <img class="w-full" src="https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.592883807.1653987848" alt="freepik">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">The Mountains</div>
                   <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    The great thing about reaching the top of the mountain is realising that there's space for more than one person. And you’re now in the prime position to help others up.
                   </p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
@@ -87,12 +102,12 @@
                 </div>
               </div></li>
               <li class="mr"></li>
-              <li><div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <li><div class="max-w-sm rounded overflow-hidden shadow-lg" onmouseover="sound()">
                 <img class="w-full" src="https://img.freepik.com/free-photo/dunes-sahara-desert-heart-africa_134785-2595.jpg?w=996" alt="freepik">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">The Deserts</div>
                   <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    All you have to do is contemplate a simple grain of sand, and you will see in it all the marvels of creation.
                   </p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
@@ -102,6 +117,48 @@
               </div></li>
           </ul>
       </div>
+        <!-- Hero Section closed-->
+      <!--Hotel Search-->
+      <div class="Hotel-Search search-bar">
+        <div class="container">
+          <p class="h1 mb-4 mb-md-5 text-dark text-uppercase text-center">Search hotels</p>
+          <div class="card" style="background-color: rgba(0,0,0,.7);">
+            <div class="card-body p-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-10 d-lg-flex flex-row mb-lg-4 mb-xl-0">
+  
+                  <div id="basic" class="form-outline form-white flex-fill me-lg-2 mb-3 mb-lg-0">
+                    <input type="text" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">What are you looking for?</label>
+                  </div>
+  
+                  <div class="form-outline datepicker form-white flex-fill mx-lg-2 mb-3 mb-lg-0" data-mdb-toggle-button="false">
+                    <input type="text" class="form-control" id="exampleDatepicker1" data-mdb-toggle="datepicker" />
+                    <label for="exampleDatepicker1" class="form-label">Arrival date</label>
+                  </div>
+  
+                  <div class="form-outline datepicker form-white flex-fill mx-lg-2 mb-3 mb-lg-0" data-mdb-toggle-button="false">
+                    <input type="text" class="form-control" id="exampleDatepicker2" data-mdb-toggle="datepicker" />
+                    <label for="exampleDatepicker2" class="form-label">Departure date</label>
+                  </div>
+  
+                  <div id="location" class="form-outline form-white flex-fill ms-lg-2 mb-4 mb-lg-0">
+                    <input type="text" id="form2" class="form-control" />
+                    <label class="form-label" for="form2">Number of guests</label>
+                  </div>
+  
+                </div>
+                <div class="col-lg-12 col-xl-2">
+                  <input class="btn btn-primary btn-rounded btn-block" type="submit" value="Search" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+              <!-- hotel clo-->
+
+              
       <div class="footer-2 bg-gray-800 pt-6 md:pt-12">
         <div class="container px-4 mx-auto">
       
@@ -160,6 +217,11 @@
         </div>
       
       </div>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+></script>
     <script src="/assets/Js/index.js"></script>
 </body>
 </html>

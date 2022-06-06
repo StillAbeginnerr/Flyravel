@@ -14,17 +14,18 @@
     margin-top: 4rem;
     transition: transform .2s;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
     height: 45px;
     width: 200px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 
 body{
     font-family: 'Rajdhani', sans-serif;
     overflow-x: hidden;
+    background-color: white;
 }
 .logo{
     position: relative;
@@ -97,9 +98,15 @@ html{
       bottom: 50vh;
   }
 li{
+    
     transition: transform .2s;
 }
 li:hover{
+    background-color: rgb(12, 0, 0);
+    color: rgb(255, 255, 255);
     transform: scale(1.11);
 }
-
+.search-bar{
+    position: relative;
+    bottom: 35vh;
+}
